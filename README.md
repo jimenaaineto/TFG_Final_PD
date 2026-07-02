@@ -32,7 +32,8 @@ PPMI Data Use Agreement. To reproduce the analysis:
 1. Register for a PPMI account and request data access at
    [ppmi-info.org](https://www.ppmi-info.org/access-data-specimens/download-data).
    Access is granted through the LONI Image & Data Archive (IDA) after
-   agreeing to the Data Use Agreement.
+   agreeing to the Data Use Agreement. Approval isn't instant, so request it
+   with enough lead time before you need to run anything.
 2. Once approved, download the following study files from the IDA:
    - `Current_Biospecimen_Analysis_Results_*.csv` (includes NfL)
    - `SAA_Biospecimen_Analysis_Results_*.csv`
@@ -40,6 +41,10 @@ PPMI Data Use Agreement. To reproduce the analysis:
      UPDRS analysis in `EDA_NfL_v4.ipynb`)
    - `Xing_Core_Lab_-_Quant_SBR_*.csv` (DAT-SPECT striatal binding ratios)
    - `Age_at_visit_*.csv`
+
+   The `*` is a date stamp that changes with every PPMI data refresh, so the
+   file you download won't have the exact same name as in the notebooks —
+   update the filename in the `BASE + r'\...'` lines if yours differs.
 3. After cloning this repo, create a `04_Data/Raw/` folder **next to** the
    cloned folder (not inside it) and place the CSVs there, keeping the
    original PPMI filenames. The notebooks read from `../../04_Data/Raw`
