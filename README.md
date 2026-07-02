@@ -12,7 +12,7 @@ All three notebooks live in `notebooks/` and are meant to be run in this order:
 1. **`EDA_NfL_v4.ipynb`** — SAA+ stratification, NfL cohort construction
    (log2 transform, ≥3 visits), linear mixed-effects model (NfL vs MDS-UPDRS
    Part III), and the within-between (Mundlak) decomposition.
-2. **`EDA_DaTscan_v3.ipynb`** — DAT-SPECT cohort construction, lateralization
+2. **EDA_DaTscan_v3.ipynb** — DAT-SPECT cohort construction, lateralization
    (tracking the less-affected/contralateral putamen), LMM (SBR vs motor
    score), and within-between decomposition.
 3. **`EDA_NfL_DaTscan_Crossover.ipynb`** — combines the two cohorts above:
