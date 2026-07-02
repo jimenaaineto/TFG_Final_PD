@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Old drafts / scratch, not part of the final analysis
+notebooks/x/
+notebooks/pre_simplify_backup_*/
+notebooks/final.ipynb
+
+# Data and results are not part of this repo (PPMI data use agreement;
+# see README.md for how to request access and regenerate results locally)
+../04_Data/
+outputs/
+results_*/
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
