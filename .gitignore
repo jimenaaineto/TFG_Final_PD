@@ -7,8 +7,10 @@ notebooks/pre_simplify_backup_*/
 notebooks/final.ipynb
 
 # Data and results are not part of this repo (PPMI data use agreement;
-# see README.md for how to request access and regenerate results locally)
-../04_Data/
+# see README.md for how to request access and regenerate results locally).
+# 04_Data lives outside this repo so it's never actually in the tree, but
+# outputs/ and results_*/ are kept here just in case something gets saved
+# inside the repo by mistake.
 outputs/
 results_*/
 *.csv
