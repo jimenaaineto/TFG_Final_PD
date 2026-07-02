@@ -40,11 +40,27 @@ PPMI Data Use Agreement. To reproduce the analysis:
      UPDRS analysis in `EDA_NfL_v4.ipynb`)
    - `Xing_Core_Lab_-_Quant_SBR_*.csv` (DAT-SPECT striatal binding ratios)
    - `Age_at_visit_*.csv`
-3. Place them in `04_Data/Raw/` at the project root (i.e. one level above
-   `05_Code/`), keeping the original PPMI filenames — the notebooks read from
-   `../../04_Data/Raw` relative to their own folder.
-4. Run the notebooks top to bottom in Jupyter; each one creates its own
-   `04_Data/Results/results_*/` output folder automatically.
+3. After cloning this repo, create a `04_Data/Raw/` folder **next to** the
+   cloned folder (not inside it) and place the CSVs there, keeping the
+   original PPMI filenames. The notebooks read from `../../04_Data/Raw`
+   relative to their own location, so the layout should look like this:
+
+   ```
+   some-folder/
+   ├── TFG_Final_PD/          <- this cloned repo
+   │   ├── README.md
+   │   └── notebooks/
+   │       ├── EDA_NfL_v4.ipynb
+   │       ├── EDA_DaTscan_v3.ipynb
+   │       └── EDA_NfL_DaTscan_Crossover.ipynb
+   └── 04_Data/
+       ├── Raw/               <- put the downloaded PPMI CSVs here
+       └── Results/           <- created automatically when you run the notebooks
+   ```
+4. Run the notebooks top to bottom in Jupyter, in this order: `EDA_NfL_v4.ipynb`,
+   then `EDA_DaTscan_v3.ipynb`, then `EDA_NfL_DaTscan_Crossover.ipynb` (the
+   third one reads the CSVs the first two produce). Each notebook creates its
+   own `04_Data/Results/results_*/` output folder automatically.
 
 ## Requirements
 
