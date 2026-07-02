@@ -1,13 +1,13 @@
 # Within-subject biomarker tracking in early Parkinson's disease
 
-Analysis code for a Bachelor's thesis (TFG) examining whether blood neurofilament
+Analysis code for TFG examining whether blood neurofilament
 light chain (NfL) and DAT-SPECT imaging track motor worsening within the same
 patient in early Parkinson's disease, using longitudinal data from the
 Parkinson's Progression Markers Initiative (PPMI).
 
 ## Notebooks
 
-All three notebooks live in `notebooks/` and are meant to be run in this order:
+All three notebooks are in `notebooks/` and are meant to be run in this order:
 
 1. **`EDA_NfL_v4.ipynb`** — SAA+ stratification, NfL cohort construction
    (log2 transform, ≥3 visits), linear mixed-effects model (NfL vs MDS-UPDRS
@@ -26,15 +26,13 @@ can be re-run independently once the raw data is in place.
 
 ## Data access
 
-This repository does **not** include any PPMI data (raw or processed), per the
+This repository does **not** include any PPMI data (raw or processed), because of the
 PPMI Data Use Agreement. To reproduce the analysis:
 
 1. Register for a PPMI account and request data access at
    [ppmi-info.org](https://www.ppmi-info.org/access-data-specimens/download-data).
    Access is granted through the LONI Image & Data Archive (IDA) after
-   agreeing to the Data Use Agreement; some data types may require a short
-   research use description. Check the site for the current process, as it
-   can change.
+   agreeing to the Data Use Agreement.
 2. Once approved, download the following study files from the IDA:
    - `Current_Biospecimen_Analysis_Results_*.csv` (includes NfL)
    - `SAA_Biospecimen_Analysis_Results_*.csv`
